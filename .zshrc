@@ -26,13 +26,20 @@ alias bs="bower search"
 alias k="killall"
 alias toff='sudo poweroff'
 alias rstrt='sudo reboot'
-alias dev='cd ~/dev'
 alias pwd="echo $PWD"
 alias gh="cd ~"
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 alias updater='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update'
+
+####################
+##### Projects #####
+####################
+
+alias dev='cd ~/dev'
+alias ucalc='cd ~/dev/ucalc042013'
+alias dotfiles='cd ~/dev/dotfiles'
 
 ##########################
 ##### Cool Functions #####
