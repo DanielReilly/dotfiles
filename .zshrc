@@ -28,6 +28,7 @@ alias toff='sudo poweroff'
 alias rstrt='sudo reboot'
 alias pwd="echo $PWD"
 alias gh="cd ~"
+alias dev"cd dev"
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
@@ -40,6 +41,9 @@ alias updater='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanu
 alias dev='cd ~/dev'
 alias ucalc='cd ~/dev/ucalc042013'
 alias dotfiles='cd ~/dev/dotfiles'
+alias es='cd ~/dev/eventstacks'
+
+
 
 ##########################
 ##### Cool Functions #####
