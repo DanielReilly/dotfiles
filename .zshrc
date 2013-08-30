@@ -26,13 +26,16 @@ alias bs="bower search"
 alias k="killall"
 alias toff='sudo poweroff'
 alias rstrt='sudo reboot'
+alias dev='cd ~/dev'
 alias pwd="echo $PWD"
 alias gh="cd ~"
-alias dev"cd dev"
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 alias updater='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update'
+alias dnsf="dscacheutil -flushcache" 
+alias host="sudo nano /private/etc/hosts"
+
 
 ####################
 ##### Projects #####
@@ -42,7 +45,9 @@ alias dev='cd ~/dev'
 alias ucalc='cd ~/dev/ucalc042013'
 alias dotfiles='cd ~/dev/dotfiles'
 alias es='cd ~/dev/eventstacks'
-
+alias mw='cd ~/dev/MWWebsite'
+alias mw='cd ~/dev/MW'
+alias w2p='cd ~/dev/web2pybase/web2py && python web2py.py'
 
 
 ##########################
@@ -115,7 +120,6 @@ mkcd() {
 
 # How often before auto-updates occur? (days) #
 export UPDATE_ZSH_DAYS=7
-
 # Red dots to be displayed while waiting for completion #
 COMPLETION_WAITING_DOTS="true"
 
@@ -138,6 +142,9 @@ zstyle ':completion:*' menu select=1
 autoload -U compinit
 compinit
 
+# Homebrew tab-completion
+fpath=($HOME/.zsh/func $fpath)
+typeset -U fpath
 
 ######################################################
 ##### Plugins(plugins in ~/.oh-my-zsh/plugins/*) #####
