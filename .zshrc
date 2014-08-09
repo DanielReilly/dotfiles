@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 ##### Set Theme #####
 #####################
 
-ZSH_THEME="jtriley"
+ZSH_THEME="ys"
 
 #######################
 ##### Format Path #####
